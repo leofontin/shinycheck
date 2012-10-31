@@ -1,0 +1,68 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>Shinycheck</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	
+	<!-- style -->
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+	<script src="jquery.shinycheck.js"></script>
+
+	<script type="text/javascript">
+		$(function(){
+			$('form').shinycheck();
+		});
+	</script>
+	
+</head>
+<body>
+	<h1>Shinycheck</h1>
+	
+	<form action="" method="post">
+		<fieldset>
+			<div class="form_item">
+				<label>Input</label>
+				<input type="text" name="1" required="true" />
+			</div>
+			<div class="form_item">
+				<label>Email</label>
+				<input type="email" name="2" required="true" />
+			</div>
+			<div class="form_item">
+				<label>File</label>
+				<input type="file" name="3" required="true" data-extension="jpg,jpeg,gif"/>
+			</div>
+			<div class="form_item">
+				<label>Textarea</label>
+				<textarea cols="10" rows="10" name="4" required="true" ></textarea>
+			</div>
+			<div class="form_item">
+				<input type="submit" value="Envoyer" />
+			</div>
+		</fieldset>
+	</form>
+	
+	<form action="" method="post">
+		<fieldset>
+			<div class="form_item">
+				<label>Input</label>
+				<input type="text" name="4" required="true" />
+			</div>
+			<div class="form_item">
+				<label>Textarea</label>
+				<textarea cols="10" rows="10" name="6" required="true"></textarea>
+			</div>
+			<div class="form_item">
+				<input type="submit" value="Envoyer" />
+			</div>
+		</fieldset>
+	</form>
+	
+</body>
+</html>
